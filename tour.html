@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tours</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.4/themes/start/jquery-ui.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+    <header class="header-in">
+        <div class="header-bg-tour">
+            <div class="container">
+                <!-- <img class="deep" src="img/header/boat-deep.png" alt=""> -->
+                <div class="header-row">
+                    <div class="logo">
+                        <a href="#"><img class="header-img" src="img/header/logo.png" alt=""></a>
+                    </div>
+                    <div class="">
+                        <nav class="nav-box">
+                            <ul class="menu">
+                                <li><a href="">home</a></li>
+                                <li><a href="">about us</a></li>
+                                <li><a href="">tours</a></li>
+                                <li><a href="">gallery</a></li>
+                                <li><a href="">contact</a></li>
+                                <li><a href="">about</a></li>
+                            </ul>
+                            <i class="fa fa-bars" aria-hidden="true" data-mm="open"></i>
+                            <div class="box-mobile">
+                                <ul class="menu-mobile">
+                                    <li><a href="">home</a></li>
+                                    <li><a href="">about us</a></li>
+                                    <li><a href="">tours</a></li>
+                                    <li><a href="">gallery</a></li>
+                                    <li><a href="">contact</a></li>
+                                    <li><a href="">about</a></li>
+                                    <li><i class="fa fa-times" aria-hidden="true" data-mm="close"></i></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="social-contact">
+                        <div class="header-contact">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <svg id="SVGDoc" width="18" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 18 18">
+                                            <defs></defs>
+                                            <desc>Generated with Avocode.</desc>
+                                            <g transform="matrix(1,0,0,1,-1429,-35)">
+                                                <g>
+                                                    <title>instagram (1) копия</title>
+                                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABbUlEQVQ4T53UT0tWQRTH8c+E1cJ9bkyMhJAgcNk7sF6Cf9IQhFz1QK31DShBiIuoRUQgQVBCL8C1bQIJTGgRZYibFkK1cOQ8zIXb4/MvL8y9MOfMd37zO3NuUp6c8yju4ko11+N7iK2U0rfIS/HKOc/hGS72CanS/mIhpfQqFSV754DUYdcDtIT1Lkpi14zLtZxtvMWTMrcYoBUstwHFUZ8ivLiAITzGFI7wBbfLukYn0DR+YRU3SvJnNHANGy0btwWFknd4X5TU15yUyt4ryqpYW9AtvKkpaT31LqLKO7XAGVAYO4KfPa5B+HVQU3wG9Kd48KMP0HcMdDN7Aq8x3gH2CffxsdvRIhaQl/jQwexJzJbR1ewIPsDXUv6bJTuUPMIwXvRT/ionlK2h2ZQF8LBFyT+KerVI3J0YlbHtrGu2yFXs49J/dn6V/htj1W9kBs/PAQvIfEppswmKJ+ccJt7BYJ/KjqOyKaW4T04B0f+BSmAGeSEAAAAASUVORK5CYII="
+                                                        width="18" height="18" transform="matrix(1,0,0,1,1429,35)"></image>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg id="SVGDoc" width="9" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 9 17">
+                                            <defs></defs>
+                                            <desc>Generated with Avocode.</desc>
+                                            <g transform="matrix(1,0,0,1,-1466,-36)">
+                                                <g>
+                                                    <title>facebook-logo копия</title>
+                                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAAPFIbmAAAApUlEQVQoU83QLU5DQRTF8d9NSFAEiWxNd8ESEEgErvuo6VK6gIouoSvAkODAQHC0aRCtOKTJvPJS9RIMY+7X/5w7M6V3klxihilu2mhTZ9ACj/0efqEkI7z2gD0+sD05JbnDqkHfmFTV+7HuQ/dYNuitqsad6zAoyRpXuEanPuC5Ob1Ukq8GnD3qVD4Nhm5xgWOcN/0nHlq+G3bxbnOSP37BP3T6AaHJWiyFRfXCAAAAAElFTkSuQmCC"
+                                                        width="9" height="17" transform="matrix(1,0,0,1,1466,36)"></image>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg id="SVGDoc" width="17" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 17 17">
+                                            <defs></defs>
+                                            <desc>Generated with Avocode.</desc>
+                                            <g transform="matrix(1,0,0,1,-1493,-36)">
+                                                <g>
+                                                    <title>call копия</title>
+                                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABOklEQVQ4T5WSsStFYRjGf4/4A6Q7kIkJwx1lEWIUizKZrsGkjHYDAyVZZBSjyWBhsRlYMChlEnV1Z/Hq5Tv6HOe43z3L6dTz/N7nfd4jM1sHFoE2vp93YFPSWvhu+pKZ1YHOnPJJUndTdxA45Bmo5AyepkOSpYAccgVUC8RDkm5SIYfAfIG4Jmk/FbIE7BaIJySdpUJ6gUdAkWFL0koKwDVfRjM7BaaC6R4YlPTWKmQMyKJ/AMOSLluChDTHwEww3gIjkhopoJ8ezMy78XN3BeM5MBuDzGwc6AMuJN1lA+IyvZtJ4MR/tCBw4QJwDWwAy1Ey7+wF2P4FCWvNAQcRyDt6APpLVqv/gQSQJzqKVvuvmkYhJIC8o52o7DJQOSRzmJmffxXwdEVDX0uT5MeG600Do8AA0AO0A3ufWEFluyCTMUQAAAAASUVORK5CYII="
+                                                        width="17" height="17" transform="matrix(1,0,0,1,1493,36)"></image>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <svg id="SVGDoc" width="20" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 17">
+                                            <defs></defs>
+                                            <desc>Generated with Avocode.</desc>
+                                            <g transform="matrix(1,0,0,1,-1525,-36)">
+                                                <g>
+                                                    <title>envelope копия</title>
+                                                    <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABHklEQVQ4T7XUzypFURTH8c+JiQdgIAbMlaKUiREjQxl6BCNEKd1CUgw8AkMTZeTPWCZMzJUYKA+g/Ntat3NuN3HP5V5rttde6/vbe+21dpZSmsAyurRmz6hkKaVbDLTGqmU/BPANHW0CvgTwGNNtAh4FsB+X6G0R+oixAPahE4cY/SP0GjN4DeAdZhHOTSz8ErqLFQzHoQKYEA+zim1M4QDdJeAnzOEEi9iImxbAIvcsD4r1PiZ/gJ7ncR95XByial+B4SuUT7GE9bq2eq+7SYiFaE+96HfAYn8nr81QPknh38JNo1o3AgbgCvNZll3EIqU0jj2M/FTfMmCRF+MZNljWAc0Cyzi1/X8B3iOmpR1W/W2i0JUmGrlMMNpt7RM9W2zSb16XJwAAAABJRU5ErkJggg=="
+                                                        width="20" height="17" transform="matrix(1,0,0,1,1525,36)"></image>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="w-100"></div>
+                    <div class="col">
+                        <div class="title-box">
+                            <div class="title-travel">
+                                <span>your best travel</span>
+                            </div>
+                            <div class="box-odessa">
+                                <img class="odessa" src="img/header/odessa/O.png" alt="">
+                                <img class="odessa" src="img/header/odessa/D.png" alt="">
+                                <img class="odessa" src="img/header/odessa/E.png" alt="">
+                                <img class="odessa" src="img/header/odessa/S-1.png" alt="">
+                                <img class="odessa" src="img/header/odessa/S-2.png" alt="">
+                                <img class="odessa" src="img/header/odessa/A.png" alt="">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="tour-bg">
+                <div class="tour-wrapper">
+                    <div class="tour__block">
+                        <div class="tour__block-top">
+                            <p class="tour__block-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                FOOD AND WINE<br>
+                                <b>TOURS</b>
+                            </p>
+                            <button class="tour__block-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                SUBMIT AND GET DISCOUNT
+                            </button>
+                        </div>
+                        <p class="tour__block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                            iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        </p>
+                        <div class="tour__block-bottom">
+                            <div class="tour__block-item" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour1.jpg" alt="" class="tour__block-img" >
+                            </div>
+                            <div class="tour__block-item" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour2.jpg" alt="" class="tour__block-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour__block">
+                        <div class="tour__block-top">
+                            <p class="tour__block-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                CLUBS AND bar<br>
+                                <b>TOURS</b>
+                            </p>
+                            <button class="tour__block-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                SUBMIT AND GET DISCOUNT
+                            </button>
+                        </div>
+                        <p class="tour__block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                            iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        </p>
+                        <div class="tour__block-bottom">
+                            <div class="tour__block-item" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour3.jpg" alt="" class="tour__block-img">
+                            </div>
+                            <div class="tour__block-item" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour4.jpg" alt="" class="tour__block-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour__block">
+                        <div class="tour__block-top">
+                            <p class="tour__block-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                SOUVENIRS&GIFTS<br>
+                                <b>TOURS</b>
+                            </p>
+                            <button class="tour__block-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                                SUBMIT AND GET DISCOUNT
+                            </button>
+                        </div>
+                        <p class="tour__block-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
+                            iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                            sit aspernatur aut odit aut fugit, sed quia consequuntur
+                        </p>
+                        <div class="tour__block-bottom">
+                            <div class="tour__block-item" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour5.jpg" alt="" class="tour__block-img">
+                            </div>
+                            <div class="tour__block-item" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                                <img src="img/tour-images/food-tour6.jpg" alt="" class="tour__block-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-feedback">
+                <div class="container">
+                    <div class="feedback">
+                        <div class="row">
+                            <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500" class="col">
+                                <span>FEEDBACK</span>
+                            </div>
+                            <div class="col">
+                                <div class="feedback-slidere">
+                                    <div class="mesenger">
+                                        <img src="img/section8/music.png" alt="">
+                                        <div class="title-mesenger">
+                                            <span class="name">Daniella, 28</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto mollitia eaque maxime impedit dolorem id odit, modi laudantium minus blanditiis, amet neque quidem harum nobis omnis reiciendis perspiciatis corporis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mesenger">
+                                        <img src="img/section8/Fotolialudziebialiiczarni.png" alt="">
+                                        <div class="title-mesenger">
+                                            <span class="name">Manuel, 60</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto mollitia eaque maxime impedit dolorem id odit, modi laudantium minus blanditiis, amet neque quidem harum nobis omnis reiciendis perspiciatis corporis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mesenger">
+                                        <img src="img/section8/music.png" alt="">
+                                        <div class="title-mesenger">
+                                            <span class="name">Daniella, 28</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto mollitia eaque maxime impedit dolorem id odit, modi laudantium minus blanditiis, amet neque quidem harum nobis omnis reiciendis perspiciatis corporis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="mesenger">
+                                        <img src="img/section8/Fotolialudziebialiiczarni.png" alt="">
+                                        <div class="title-mesenger">
+                                            <span class="name">Manuel, 60</span>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto mollitia eaque maxime impedit dolorem id odit, modi laudantium minus blanditiis, amet neque quidem harum nobis omnis reiciendis perspiciatis corporis.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="discount">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500" class="title-discount">
+                                <span>WE CAN MAKE YOUR DREAMS</span>
+                                <span>COME TRUE</span>
+                                <span>AND GIVE YOU 5% DISCOUNT</span>
+                                <span>FOR IT</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500" class="get-discount">
+                                <input type="text" class="form-control inp-text" placeholder="name ...">
+                                <input type="email" class="form-control inp-text" placeholder="phone ...">
+                                <textarea class="inp-message" name="message" placeholder="I wish to stay in Ukraine for a week and have a party every night!"></textarea>
+                                <a class="btn-site btn-messenge" href="">SUBMIT AND GET DISCOUNT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="parallax" class="bg-footer">
+            <img id="parallax2" class="boat" src="img/footer/boat.png" alt="">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="1500" class="box-reservations">
+                    <span class="title-reservations">RESERVATIONS</span>
+                    <div class="reservations">
+                        <div class="box-date">
+                            <div class="date">
+                                <span>ARRIVAL DATE</span>
+                                <input class="form-date" placeholder="yy.mm.dd">
+                            </div>
+                            <div class="date">
+                                <span>DATE OF DEPARTURE</span>
+                                <input class="form-date" placeholder="yy.mm.dd">
+                            </div>
+                        </div>
+                        <span>BOOKING SERVICES</span>
+                        <input type="text" class="form-text">
+                        <span>NAME</span>
+                        <input type="text" class="form-text">
+                        <span>E-MAIL</span>
+                        <input type="email" class="form-text">
+                        <div class="box-contact">
+                            <div class="contact">
+                                <span>COUNTRY</span>
+                                <input class="form-contact" type="text">
+                            </div>
+                            <div class="contact">
+                                <span>TEL</span>
+                                <input class="form-contact" type="text">
+                            </div>
+                        </div>
+                        <span>QUESTION</span>
+                        <input type="text" class="form-text">
+                    </div>
+                    <a class="btn-site btn-reservations" href="">send me an angel</a>
+                </div>
+                <div class="footer-nav">
+                    <nav class="footer-nav-box">
+                        <ul class="footer-menu">
+                            <li><a href="">about us</a></li>
+                            <li><a href="">tours</a></li>
+                            <li><a href="">gallery</a></li>
+                            <li><a href="">contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contact-footer">
+                        <div class="contact">
+                            <a href="">
+                                <svg id="SVGDoc" width="18" height="18" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 18 18">
+                                    <defs></defs>
+                                    <desc>Generated with Avocode.</desc>
+                                    <g transform="matrix(1,0,0,1,-1126,-9005)">
+                                        <g>
+                                            <title>instagram (1) копия 2</title>
+                                            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABbUlEQVQ4T53UT0tWQRTH8c+E1cJ9bkyMhJAgcNk7sF6Cf9IQhFz1QK31DShBiIuoRUQgQVBCL8C1bQIJTGgRZYibFkK1cOQ8zIXb4/MvL8y9MOfMd37zO3NuUp6c8yju4ko11+N7iK2U0rfIS/HKOc/hGS72CanS/mIhpfQqFSV754DUYdcDtIT1Lkpi14zLtZxtvMWTMrcYoBUstwHFUZ8ivLiAITzGFI7wBbfLukYn0DR+YRU3SvJnNHANGy0btwWFknd4X5TU15yUyt4ryqpYW9AtvKkpaT31LqLKO7XAGVAYO4KfPa5B+HVQU3wG9Kd48KMP0HcMdDN7Aq8x3gH2CffxsdvRIhaQl/jQwexJzJbR1ewIPsDXUv6bJTuUPMIwXvRT/ionlK2h2ZQF8LBFyT+KerVI3J0YlbHtrGu2yFXs49J/dn6V/htj1W9kBs/PAQvIfEppswmKJ+ccJt7BYJ/KjqOyKaW4T04B0f+BSmAGeSEAAAAASUVORK5CYII="
+                                                width="18" height="18" transform="matrix(1,0,0,1,1126,9005)"></image>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg id="SVGDoc" width="9" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 9 17">
+                                    <defs></defs>
+                                    <desc>Generated with Avocode.</desc>
+                                    <g transform="matrix(1,0,0,1,-1163,-9006)">
+                                        <g>
+                                            <title>facebook-logo копия 2</title>
+                                            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAAPFIbmAAAApUlEQVQoU83QLU5DQRTF8d9NSFAEiWxNd8ESEEgErvuo6VK6gIouoSvAkODAQHC0aRCtOKTJvPJS9RIMY+7X/5w7M6V3klxihilu2mhTZ9ACj/0efqEkI7z2gD0+sD05JbnDqkHfmFTV+7HuQ/dYNuitqsad6zAoyRpXuEanPuC5Ob1Ukq8GnD3qVD4Nhm5xgWOcN/0nHlq+G3bxbnOSP37BP3T6AaHJWiyFRfXCAAAAAElFTkSuQmCC"
+                                                width="9" height="17" transform="matrix(1,0,0,1,1163,9006)"></image>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="contact">
+                            <a href="">
+                                <svg id="SVGDoc" width="17" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 17 17">
+                                    <defs></defs>
+                                    <desc>Generated with Avocode.</desc>
+                                    <g transform="matrix(1,0,0,1,-1193,-8968)">
+                                        <g>
+                                            <title>call копия 2</title>
+                                            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAABOklEQVQ4T5WSsStFYRjGf4/4A6Q7kIkJwx1lEWIUizKZrsGkjHYDAyVZZBSjyWBhsRlYMChlEnV1Z/Hq5Tv6HOe43z3L6dTz/N7nfd4jM1sHFoE2vp93YFPSWvhu+pKZ1YHOnPJJUndTdxA45Bmo5AyepkOSpYAccgVUC8RDkm5SIYfAfIG4Jmk/FbIE7BaIJySdpUJ6gUdAkWFL0koKwDVfRjM7BaaC6R4YlPTWKmQMyKJ/AMOSLluChDTHwEww3gIjkhopoJ8ezMy78XN3BeM5MBuDzGwc6AMuJN1lA+IyvZtJ4MR/tCBw4QJwDWwAy1Ey7+wF2P4FCWvNAQcRyDt6APpLVqv/gQSQJzqKVvuvmkYhJIC8o52o7DJQOSRzmJmffxXwdEVDX0uT5MeG600Do8AA0AO0A3ufWEFluyCTMUQAAAAASUVORK5CYII="
+                                                width="17" height="17" transform="matrix(1,0,0,1,1193,8968)"></image>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>0800 325 32 32</span>
+                            </a>
+                            <a href="">
+                                <svg id="SVGDoc" width="20" height="17" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:avocode="https://avocode.com/" viewBox="0 0 20 17">
+                                    <defs></defs>
+                                    <desc>Generated with Avocode.</desc>
+                                    <g transform="matrix(1,0,0,1,-1191,-9005)">
+                                        <g>
+                                            <title>envelope копия 2</title>
+                                            <image xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABHklEQVQ4T7XUzypFURTH8c+JiQdgIAbMlaKUiREjQxl6BCNEKd1CUgw8AkMTZeTPWCZMzJUYKA+g/Ntat3NuN3HP5V5rttde6/vbe+21dpZSmsAyurRmz6hkKaVbDLTGqmU/BPANHW0CvgTwGNNtAh4FsB+X6G0R+oixAPahE4cY/SP0GjN4DeAdZhHOTSz8ErqLFQzHoQKYEA+zim1M4QDdJeAnzOEEi9iImxbAIvcsD4r1PiZ/gJ7ncR95XByial+B4SuUT7GE9bq2eq+7SYiFaE+96HfAYn8nr81QPknh38JNo1o3AgbgCvNZll3EIqU0jj2M/FTfMmCRF+MZNljWAc0Cyzi1/X8B3iOmpR1W/W2i0JUmGrlMMNpt7RM9W2zSb16XJwAAAABJRU5ErkJggg=="
+                                                width="20" height="17" transform="matrix(1,0,0,1,1191,9005)"></image>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span>happyagency@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
