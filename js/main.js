@@ -129,6 +129,33 @@ $(function() {
         // animateScroll();
     });
 
+    // slider - hotels
+
+    $('.tabul_slider .slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        focusOnSelect: false,
+        infinite: false,
+        prevArrow: '<div class="arrow prev"><img src="/img/arrow-right.png" /></div>',
+        nextArrow: '<div class="arrow next"><img src="/img/arrow-right.png" /></div>'
+    });
+
+    $('[data-tab]').on('click', function(){
+        
+        let target = $(this).attr('data-tab');
+
+        $('.tabul_list_item_btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tabul_slider_container').removeClass('active');
+        $('.tabul_slider_container' + target).addClass('active');
+    });
+
+    $('.tabul_slider_container_box').on('click', function(){
+        $('.tabul_slider_container_box').removeClass('active');
+        $(this).addClass('active');
+    });
+
     //slider gallery-------------------------------------------------
 
     $('.gallery-slider__for').slick({

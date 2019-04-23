@@ -1013,6 +1013,21 @@ section {
 .header-in .header_about_bg {
   width: 100%;
 }
+.header-in .header_about_title {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-in .header_about_title_item {
+  width: 450px;
+}
 .header-in .header-bg-in {
   height: 800px;
   background: url(../img/header/header-in.jpg);
@@ -1484,8 +1499,21 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .about_container {
   margin-top: -250px;
 }
+.about_container.hotel_container {
+  margin-top: -220px;
+}
+.about_container.hotel_container .about_container_title {
+  margin-bottom: 0;
+}
 .about_container_title {
   font-size: 50px;
+  font-weight: bold;
+  font-family: "AvenirNext-Bold";
+  color: #3ab5c7;
+  text-transform: uppercase;
+}
+.about_container_podtitle {
+  font-size: 37px;
   font-weight: bold;
   font-family: "AvenirNext-Bold";
   color: #3ab5c7;
@@ -1560,4 +1588,143 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .team_container_item_name {
   color: #333;
   font-size: 20px;
+}
+.tabul {
+  padding: 60px 0;
+}
+.tabul_list_item {
+  display: flex;
+}
+.tabul_list_item_btn {
+  color: #fff !important;
+  font-size: 26px;
+  background: #3ab5c7;
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 30px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.tabul_list_item_btn.active {
+  background: #c53131;
+}
+.tabul_slider {
+  margin-top: 50px;
+  position: relative;
+}
+.tabul_slider .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.tabul_slider .arrow.prev {
+  left: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+.tabul_slider .arrow.next {
+  right: 0;
+}
+.tabul_slider_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: all 0.6s ease-out;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7);
+}
+.tabul_slider_container.active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.tabul_slider_container .slider {
+  position: relative;
+  padding: 0 30px;
+}
+.tabul_slider_container .slider .slide {
+  padding: 0 10px;
+}
+.tabul_slider_container_box.active .box_image_price {
+  background: #a62117;
+}
+.tabul_slider_container_box.active .box_image_desc {
+  transform: none;
+}
+.tabul_slider_container_box.active .box_stars .fa-star.active {
+  color: #a62117;
+}
+.tabul_slider_container_box.active .box_subtitle {
+  color: #a62117;
+}
+.tabul_slider_container_box.active .box_title {
+  color: #a62117;
+}
+.tabul_slider_container_box .box_image {
+  position: relative;
+  overflow: hidden;
+}
+.tabul_slider_container_box .box_image_item {
+  width: 100%;
+}
+.tabul_slider_container_box .box_image_price {
+  font-size: 30px;
+  color: #fff;
+  font-family: "AvenirNext-Bold";
+  padding: 3px 20px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: #3ab5c7;
+  transition: all 0.4s ease-out;
+}
+.tabul_slider_container_box .box_image_desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #a62117;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px;
+  transform: translateY(100%);
+  transition: all 0.4s ease-out;
+}
+.tabul_slider_container_box .box {
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+.tabul_slider_container_box .box_subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+  transition: all 0.4s ease-out;
+}
+.tabul_slider_container_box .box_title {
+  font-size: 30px;
+  font-family: "AvenirNext-Bold";
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+}
+.tabul_slider_container_box .box_stars {
+  display: flex;
+  justify-content: flex-start;
+}
+.tabul_slider_container_box .box_stars .fa-star {
+  color: #b5b5b5;
+  margin-right: 5px;
+  transition: all 0.4s ease-out;
+}
+.tabul_slider_container_box .box_stars .fa-star.active {
+  color: #3ab5c7;
 }

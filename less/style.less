@@ -1103,6 +1103,21 @@ section {
     .header_about_bg{
         width: 100%;
     }
+    .header_about_title{
+        position: absolute;
+        top: 25vh;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1200px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        &_item{
+            width: 450px;
+        }
+    }
     .header-bg-in {
         height: 800px;
         background: url(../img/header/header-in.jpg);
@@ -1626,8 +1641,21 @@ section .tour-bg {
 
 .about_container{
     margin-top: -250px;
+    &.hotel_container{
+        margin-top: -220px;
+        .about_container_title{
+            margin-bottom: 0;
+        }
+    }
     &_title{
         font-size: 50px;
+        font-weight: bold;
+        font-family: @bold;
+        color: #3ab5c7;
+        text-transform: uppercase;
+    }
+    &_podtitle{
+        font-size: 37px;
         font-weight: bold;
         font-family: @bold;
         color: #3ab5c7;
@@ -1703,6 +1731,152 @@ section .tour-bg {
             &_name{
                 color: #333;
                 font-size: 20px;
+            }
+        }
+    }
+}
+
+.tabul{
+    padding: 60px 0;
+    &_list{
+        &_item{
+            display: flex;
+            &_btn{
+                color: #fff !important;
+                font-size: 26px;
+                background: #3ab5c7;
+                width: 100%;
+                padding: 15px 20px;
+                box-sizing: border-box;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                text-transform: uppercase;
+                align-items: center;
+                border-radius: 30px;
+                transition: all .4s ease-out;
+                cursor: pointer;
+                &.active{
+                    background: #c53131;
+                }
+            }
+        }
+    }
+    &_slider{
+        margin-top: 50px;
+        position: relative;
+        .arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            &.prev{
+                left: 0;
+                transform: translateY(-50%) rotate(180deg);
+            }
+            &.next{
+                right: 0;
+            }
+        }
+        &_container{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            transition: all .6s ease-out;
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(.7);
+            &.active{
+                position: relative;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+            }
+            .slider{
+                position: relative;
+                padding: 0 30px;
+                .slide{
+                    padding: 0 10px;
+                }
+            }
+            &_box{
+                &.active{
+                    .box_image_price{
+                        background: #a62117;
+                    }
+                    .box_image_desc{
+                        transform: none;
+                    }
+                    .box_stars .fa-star.active{
+                        color: #a62117;
+                    }
+                    .box_subtitle{
+                        color: #a62117;
+                    }
+                    .box_title{
+                        color: #a62117;
+                    }
+                }
+                .box_image{
+                    position: relative;
+                    overflow: hidden;
+                    &_item{
+                        width: 100%;
+                    }
+                    &_price{
+                        font-size: 30px;
+                        color: #fff;
+                        font-family: @bold;
+                        padding: 3px 20px;
+                        position: absolute;
+                        top: 40px;
+                        left: 0;
+                        background: #3ab5c7;
+                        transition: all .4s ease-out;
+                    }
+                    &_desc{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        background: #a62117;
+                        color: #fff;
+                        font-size: 24px;
+                        text-align: center;
+                        padding: 10px 20px;
+                        transform: translateY(100%);
+                        transition: all .4s ease-out;
+                    }
+                }
+                .box{
+                    width: 100%;
+                    padding: 15px 10px;
+                    box-sizing: border-box;
+                    &_subtitle{
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        transition: all .4s ease-out;
+                    }
+                    &_title{
+                        font-size: 30px;
+                        font-family: @bold;
+                        text-transform: uppercase;
+                        transition: all .4s ease-out;
+                    }
+                    &_stars{
+                        display: flex;
+                        justify-content: flex-start;
+                        .fa-star{
+                            color: #b5b5b5;
+                            margin-right: 5px;
+                            transition: all .4s ease-out;
+                            &.active{
+                                color: #3ab5c7;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
