@@ -780,6 +780,30 @@ section {
                     letter-spacing: -5.64px;
                 }
             }
+            &.title_work{
+                max-width: 470px;
+                span{
+                    text-transform: unset;
+                    &.first{
+                        font-size: 75px;
+                        line-height: 1;
+                    }
+                    &.second{
+                        font-size: 100px;
+                        font-family: @bold;
+                        line-height: 1;
+                    }
+                    &.third{
+                        font-size: 100px;
+                        font-weight: 600;
+                        line-height: 1;
+                    }
+                    &.fourth{
+                        font-size: 52px;
+                        line-height: 1;
+                    }
+                }
+            }
         }
         .get-discount {
             .inp-text {
@@ -824,14 +848,19 @@ section {
             }
             .btn-messenge {
                 color: #ffffff;
-                padding: 15px 164px;
+                // padding: 15px 164px;
                 font-size: 20px;
                 text-decoration: none;
                 font-weight: 700;
                 line-height: 41px;
-                text-transform: uppercase;
+                text-transform: unset;
                 letter-spacing: -0.8px;
                 border-radius: 15px;
+                max-width: 490px;
+                width: 100%;
+                padding: 10px 40px;
+                box-sizing: border-box;
+                text-align: center;
             }
         }
     } // footer..
@@ -1098,7 +1127,24 @@ section {
             left: 0;
             top: 0;
             right: 0;
+            z-index: 2;
         }
+        .container .nav-box .menu li a{
+            color: #3ab5c7;
+        }
+        .container .nav-box .menu li.active a{
+            color: #fff !important;
+            background: #3ab5c7;
+        }
+        .container .social-contact_lang{
+            color: #3ab5c7;
+        }
+        .container .social-contact span{
+            color: #3ab5c7;
+        }
+    }
+    &work_header{
+
     }
     .header_about_bg{
         width: 100%;
@@ -1641,6 +1687,10 @@ section .tour-bg {
 
 .about_container{
     margin-top: -250px;
+    &.work_container{
+        padding-top: 100px;
+        margin-top: 0;
+    }
     &.hotel_container{
         margin-top: -220px;
         .about_container_title{
@@ -1673,6 +1723,9 @@ section .tour-bg {
         b{
             color: #3ab5c7;
             font-family: @bold;
+        }
+        &-work b{
+            font-family: "AvenirNext" 
         }
     }
     &_link{
@@ -1880,4 +1933,10 @@ section .tour-bg {
             }
         }
     }
+}
+
+.work_subtitle{
+    font-family: @bold;
+    color: #333;
+    margin-bottom: 20px;
 }

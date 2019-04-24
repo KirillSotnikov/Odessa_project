@@ -708,6 +708,30 @@ section {
   text-transform: uppercase;
   letter-spacing: -5.64px;
 }
+.container .discount .title-discount.title_work {
+  max-width: 470px;
+}
+.container .discount .title-discount.title_work span {
+  text-transform: unset;
+}
+.container .discount .title-discount.title_work span.first {
+  font-size: 75px;
+  line-height: 1;
+}
+.container .discount .title-discount.title_work span.second {
+  font-size: 100px;
+  font-family: "AvenirNext-Bold";
+  line-height: 1;
+}
+.container .discount .title-discount.title_work span.third {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1;
+}
+.container .discount .title-discount.title_work span.fourth {
+  font-size: 52px;
+  line-height: 1;
+}
 .container .discount .get-discount .inp-text {
   margin-top: 15px;
   border-radius: 15px;
@@ -750,14 +774,18 @@ section {
 }
 .container .discount .get-discount .btn-messenge {
   color: #ffffff;
-  padding: 15px 164px;
   font-size: 20px;
   text-decoration: none;
   font-weight: 700;
   line-height: 41px;
-  text-transform: uppercase;
+  text-transform: unset;
   letter-spacing: -0.8px;
   border-radius: 15px;
+  max-width: 490px;
+  width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  text-align: center;
 }
 .container .box-reservations {
   display: flex;
@@ -1009,6 +1037,20 @@ section {
   left: 0;
   top: 0;
   right: 0;
+  z-index: 2;
+}
+.header-in.about_header .container .nav-box .menu li a {
+  color: #3ab5c7;
+}
+.header-in.about_header .container .nav-box .menu li.active a {
+  color: #fff !important;
+  background: #3ab5c7;
+}
+.header-in.about_header .container .social-contact_lang {
+  color: #3ab5c7;
+}
+.header-in.about_header .container .social-contact span {
+  color: #3ab5c7;
 }
 .header-in .header_about_bg {
   width: 100%;
@@ -1499,6 +1541,10 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .about_container {
   margin-top: -250px;
 }
+.about_container.work_container {
+  padding-top: 100px;
+  margin-top: 0;
+}
 .about_container.hotel_container {
   margin-top: -220px;
 }
@@ -1532,6 +1578,9 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .about_container_text b {
   color: #3ab5c7;
   font-family: "AvenirNext-Bold";
+}
+.about_container_text-work b {
+  font-family: "AvenirNext";
 }
 .about_container_link {
   font-size: 24px;
@@ -1727,4 +1776,9 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 }
 .tabul_slider_container_box .box_stars .fa-star.active {
   color: #3ab5c7;
+}
+.work_subtitle {
+  font-family: "AvenirNext-Bold";
+  color: #333;
+  margin-bottom: 20px;
 }
