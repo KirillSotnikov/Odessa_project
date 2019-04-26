@@ -1052,6 +1052,9 @@ section {
 .header-in.about_header .container .social-contact span {
   color: #3ab5c7;
 }
+.header-in.about_header .container .nav-box .menu li:hover::after {
+  border-color: #3ab5c7;
+}
 .header-in .header_about_bg {
   width: 100%;
 }
@@ -1541,8 +1544,34 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .about_container {
   margin-top: -250px;
 }
+.about_container .fest_img {
+  width: 100%;
+}
+.about_container .fest_img_col {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+.about_container .fest_img_col:hover .fest_img_search {
+  opacity: 1;
+  visibility: visible;
+}
+.about_container .fest_img_search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  visibility: hidden;
+  pointer-events: none;
+}
+.about_container .fest_img_search i {
+  color: #fff;
+  font-size: 40px;
+}
 .about_container.work_container {
-  padding-top: 100px;
+  padding-top: 150px;
   margin-top: 0;
 }
 .about_container.hotel_container {
@@ -1565,6 +1594,12 @@ section .tour-bg .tour__block-bottom .tour__block-img {
   color: #3ab5c7;
   text-transform: uppercase;
 }
+.about_container_podtitle.fest_podtitle {
+  font-size: 24px;
+}
+.about_container_podtitle.fest_subtitle {
+  font-family: "AvenirNext";
+}
 .about_container_subtitle {
   font-size: 24px;
   font-weight: bold;
@@ -1578,9 +1613,11 @@ section .tour-bg .tour__block-bottom .tour__block-img {
 .about_container_text b {
   color: #3ab5c7;
   font-family: "AvenirNext-Bold";
+  font-size: 24px;
 }
 .about_container_text-work b {
   font-family: "AvenirNext";
+  font-size: 24px;
 }
 .about_container_link {
   font-size: 24px;
