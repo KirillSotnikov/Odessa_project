@@ -38,7 +38,7 @@
   }
   .container .box-text-hotels .text-hotels {
     font-size: 32px;
-    margin-left: 135px;
+    margin-left: 80px;
   }
   .container .transfer {
     margin-top: 0px;
@@ -596,6 +596,19 @@
     margin-top: 470px;
     right: -7%;
   }
+  .container .discount .title-discount.title_work span.first {
+    font-size: 45px;
+  }
+  .container .discount .title-discount.title_work span.second {
+    font-size: 60px;
+  }
+  .container .discount .title-discount.title_work span.third {
+    font-size: 60px;
+  }
+  .container .discount .title-discount.title_work span.fourth {
+    font-size: 30px;
+    letter-spacing: -2.64px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container .nav-box .menu {
@@ -703,7 +716,7 @@
   }
   .container .feedback span {
     letter-spacing: -0.8px;
-    font-size: 36px;
+    font-size: 36px !important;
   }
   .container .feedback .feedback-slidere .mesenger img {
     height: 110px;
@@ -896,6 +909,10 @@
     font-size: 16px;
     padding: 3px 40px;
   }
+  footer {
+    background: #3ab5c7;
+    margin-top: 30px;
+  }
   .container .box-reservations .btn-reservations {
     padding: 5px 60px;
     font-size: 16px;
@@ -1029,7 +1046,7 @@
     font-size: 7px;
   }
   .container .feedback span {
-    font-size: 24px;
+    font-size: 24px !important;
   }
   .container .feedback .feedback-slidere .mesenger img {
     height: 75px;

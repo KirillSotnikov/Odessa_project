@@ -60,6 +60,10 @@ $(function() {
     var x2 = 0;
     var windowWidth = $(window).width();
 
+    if(windowWidth <= 960){
+        $('.container .discount .title-discount.title_work span.third').append('<br/>')
+    }
+
     function menuController(action) {
         if (action == 'open') {
             $('.box-mobile').addClass('active');

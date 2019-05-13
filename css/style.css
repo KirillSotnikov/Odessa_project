@@ -486,7 +486,7 @@ section {
   letter-spacing: 2.5px;
   margin-bottom: 10px;
   font-weight: 700;
-  background-image: url(../img/section5/bg-text.png);
+  background-image: url(../img/section5/bg-text1.png);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -906,6 +906,12 @@ section {
 .container .footer-nav .footer-nav-box .footer-menu {
   margin-bottom: 0px;
 }
+.container .footer-nav .footer-nav-box .footer-menu li.active a {
+  background: #fff;
+  color: #3ab5c7 !important;
+  padding: 5px 30px;
+  border-radius: 30px;
+}
 .container .footer-nav .footer-nav-box .footer-menu li {
   position: relative;
   padding: 17px 20px;
@@ -1031,6 +1037,11 @@ section {
   box-sizing: border-box;
   display: block;
   margin: 0 auto;
+}
+.footer_social {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
 }
 .header-in.about_header .container {
   position: absolute;
@@ -1818,4 +1829,29 @@ section .tour-bg .tour__block-bottom .tour__block-img {
   font-family: "AvenirNext-Bold";
   color: #333;
   margin-bottom: 20px;
+}
+.odessa-opera-img {
+  width: 100%;
+}
+.why_us_box_img {
+  width: 100%;
+}
+.text-hotels__k {
+  color: #3ab5c7 !important;
+  background: none !important;
+}
+.btn__k {
+  text-align: center;
+  text-transform: uppercase;
+}
+.title2__k {
+  font-family: "AvenirNext-Bold";
+}
+.feedback_btn {
+  background: #fff;
+  color: #3ab5c7;
+  padding: 7px 30px;
+}
+.feed_kk {
+  font-size: 48px !important;
 }
