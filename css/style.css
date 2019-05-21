@@ -109,6 +109,12 @@ section {
   background-size: cover;
   background-position: center;
 }
+.header-bg .container {
+  max-width: 1400px;
+}
+.header-bg.aboutPage-bg {
+  background: url(../img/about_bg.png);
+}
 .odessa-opera-bg {
   background: url(../img/section1/The-Odessa-Opera.png);
   background-repeat: no-repeat;
@@ -140,6 +146,9 @@ section {
   background-position: top;
   position: relative;
   overflow: hidden;
+}
+.bg-footer .container {
+  max-width: 1400px;
 }
 .boat {
   position: absolute;
@@ -978,7 +987,7 @@ section {
   padding: 0 90px 50px 50px;
 }
 .contact-bg__box-left .contact-bg__box-title:nth-child(1) {
-  font-size: 72px;
+  font-size: 60px;
   line-height: 1;
   margin-bottom: 0;
   font-family: "AvenirNext-Bold";
@@ -1093,7 +1102,7 @@ section {
 }
 .header-in .container {
   position: relative;
-  max-width: 1232px;
+  max-width: 1400px;
 }
 .header-in .container .header-row {
   display: flex;
@@ -1118,7 +1127,7 @@ section {
 }
 .header-in .container .nav-box .menu li a {
   font-family: "AvenirNext-Bold";
-  font-size: 24px;
+  font-size: 18px;
   color: #ffffff;
   line-height: 30px;
   letter-spacing: 0.6px;
@@ -1277,6 +1286,7 @@ section {
   overflow: hidden;
 }
 .footer-in .container {
+  max-width: 1400px;
   height: 600px;
   display: flex;
   align-items: flex-end;
@@ -1321,7 +1331,7 @@ section {
 }
 .header-gallery .container {
   position: relative;
-  max-width: 1232px;
+  max-width: 1400px;
 }
 .header-gallery .container .nav-box .fa-bars {
   color: #3ab5c7;
@@ -1391,7 +1401,7 @@ section.gallery .gallery-container__item-title {
   margin-bottom: 45px;
 }
 section.gallery .gallery-container__item-title b {
-  font-size: 72px;
+  font-size: 50px;
 }
 section.gallery .gallery-container__item-box {
   margin-bottom: 30px;
